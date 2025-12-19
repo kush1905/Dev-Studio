@@ -6,8 +6,8 @@ import './AdminLogin.css';
 
 function AdminLogin() {
   const [formData, setFormData] = useState({
-    username: '',
-    password: '',
+    username: 'admin',
+    password: 'password123',
   });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');

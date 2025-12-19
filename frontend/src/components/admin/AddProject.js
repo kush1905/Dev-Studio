@@ -145,7 +145,7 @@ function AddProject() {
   const getImageUrl = (url) => {
     if (!url) return '';
     if (url.startsWith('http') || url.startsWith('blob:')) return url; // Handle full URLs and blob URLs
-    return `http://localhost:5000${url}`; // Prepend base URL for relative paths
+    return `http://localhost:5001${url}`; // Prepend base URL for relative paths
   };
 
   return (

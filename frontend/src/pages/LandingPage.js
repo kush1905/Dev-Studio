@@ -7,6 +7,8 @@ import Clients from '../components/landing/Clients';
 import ContactForm from '../components/landing/ContactForm';
 import Newsletter from '../components/landing/Newsletter';
 import Footer from '../components/landing/Footer';
+import AboutUs from '../components/landing/AboutUs';
+import WhyChooseUs from '../components/landing/WhyChooseUs';
 import AuroraBackground from '../components/AuroraBackground';
 import './LandingPage.css';
 
@@ -39,6 +41,8 @@ function LandingPage() {
       <AuroraBackground />
       <Navbar />
       <Hero />
+      <AboutUs />
+      <WhyChooseUs />
       <Projects projects={projects} loading={loading} />
       <Clients clients={clients} loading={loading} />
       <ContactForm />

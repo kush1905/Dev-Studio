@@ -145,7 +145,13 @@ const seedData = async () => {
         await Project.deleteMany();
         await Contact.deleteMany();
         await Newsletter.deleteMany();
-        // Intentionally NOT clearing Admin to preserve access
+        // Force reset admin to ensure known credentials
+        await Admin.deleteOne({ username: 'admin' });
+        await Admin.create({
+            username: 'admin',
+            password: 'password123'
+        });
+        console.log('Admin user reset: admin / password123');
 
         console.log('Inserting sample data...');
         await Client.insertMany(sampleClients);
