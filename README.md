@@ -1,4 +1,4 @@
-# MERN Full-Stack Application
+# Dev Studio -A MERN Full-Stack Application
 
 A production-grade full-stack MERN application with a public landing page and secure admin panel.
 
