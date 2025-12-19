@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Modern Minimalist Palette */
+  --bg-dark: #050505;
+  /* Deep matte black */
+  --bg-card: rgba(255, 255, 255, 0.03);
+  /* Subtle glass */
+
+  --primary-color: #f59e0b;
+  /* Sunset Amber */
+  --primary-hover: #d97706;
+  /* Darker Amber Hover */
+
+  --text-primary: #ffffff;
+  --text-secondary: #a1a1aa;
+  /* Neutral Gray */
+  --text-muted: #52525b;
+
+  --border-color: rgba(255, 255, 255, 0.08);
+
+  /* Layout */
+  --nav-height: 80px;
+  --max-width: 1200px;
+
+  /* Animation */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Utilities */
+.text-gradient {
+  background: linear-gradient(135deg, #fff 0%, #a1a1aa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+button {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  cursor: pointer;
+}
