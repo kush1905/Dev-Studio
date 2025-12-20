@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import api from '../../utils/axios';
+import api, { BASE_URL } from '../../utils/axios';
 import ImageCropper from './ImageCropper';
 import './AddProject.css';
 
@@ -145,7 +145,7 @@ function AddProject() {
   const getImageUrl = (url) => {
     if (!url) return '';
     if (url.startsWith('http') || url.startsWith('blob:')) return url; // Handle full URLs and blob URLs
-    return `http://localhost:5001${url}`; // Prepend base URL for relative paths
+    return `${BASE_URL}${url}`; // Prepend base URL for relative paths
   };
 
   return (

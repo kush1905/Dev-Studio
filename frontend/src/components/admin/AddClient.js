@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import api from '../../utils/axios';
+import api, { BASE_URL } from '../../utils/axios';
 import ImageCropper from './ImageCropper';
 import './AddClient.css';
 
@@ -148,7 +148,7 @@ function AddClient() {
   const getImageUrl = (url) => {
     if (!url) return '';
     if (url.startsWith('http')) return url;
-    return `http://localhost:5001${url}`;
+    return `${BASE_URL}${url}`;
   };
 
   return (
