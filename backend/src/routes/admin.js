@@ -35,3 +35,4 @@ router.get('/newsletters', getNewsletters);
 module.exports = router;
 
 
+

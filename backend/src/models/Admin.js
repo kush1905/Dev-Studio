@@ -45,3 +45,4 @@ adminSchema.methods.getSignedJwtToken = function () {
 module.exports = mongoose.model('Admin', adminSchema);
 
 
+
